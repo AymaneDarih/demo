@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: 'attack';
+    src: url(font/aAttackGraffiti.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'docallisme';
+    src: url(font/DOCALLISME\ ON\ STREET.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'smasher';
+    src: url(font/Smasher\ 312\ Custom.ttf);
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Changa', sans-serif; */
+}
+
+.header {
+    position: relative;
+    max-width: 100%;
+    height: 18rem;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(./images/joe-yates-CsH9TDWtA6c-unsplash.jpg);
+    background-position: 5% 64%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.head_header {
+    position: absolute;
+    /* max-width: 100%;
+    margin: 0 auto;
+    text-align: center; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-family: 'cornerstone';
+    color: white;
+    font-size: 4.4rem;
+
+}
+
+.head_header:hover {
+    color: rgb(221, 221, 39);
+    transform: rotate(1.2rem);
+}
+
+.navbar {
+    position: relative;
+    max-width: 95%;
+    padding: 4rem 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar_sub {
+    max-width: 95%;
+    margin: 4.6rem auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item_sub:not(:last-child) {
+    margin-right: 4.6rem;
+}
+
+.nav-item_sub {
+    text-decoration: none;
+    color: rgb(231, 231, 16);
+    text-transform: uppercase;
+    font-family: 'cornerstone';
+    font-size: 3.8rem;
+
+}
+
+.nav-item_sub:hover {
+    text-decoration: none;
+    color: rgb(231, 231, 16);
+    border-bottom: 8px solid rgb(231, 231, 16);
+}
+
+.logo-brand {
+    cursor: pointer;
+    z-index: 999;
+}
+
+.logo {
+    position: absolute;
+    width: 25rem;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo:hover {
+    -webkit-filter: brightness(.85);
+    filter: brightness(.85);
+}
+
+.nav-list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-item {
+    font-size: 1.8rem;
+    color: white;
+    margin-right: 2rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    text-transform: uppercase;
+
+
+}
+
+.nav-item:hover {
+    font-size: 1.8rem;
+    color: black;
+    border: 2px solid rgb(231, 231, 16);
+    background-color: rgb(231, 231, 16);
+    font-style: bold;
+    /* padding: 0.6rem; */
+    text-decoration: none;
+}
+
+.media-button {
+    display: block;
+
+}
+
+.media-icon {
+    font-size: 2rem;
+    color: rgba(231, 231, 16, 0.8);
+    display: block;
+    margin-right: 1.5rem;
+}
+
+.media-icon:hover {
+    color: rgb(231, 231, 16);
+}
+
+@font-face {
+    font-family: 'cornerstone';
+    src: url(font/Cornerstone.ttf);
+    font-style: normal;
+}
+
+
+/* Main content */
+
+.main {
+    margin: 4rem auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10rem;
+    /* border: red solid 5px; */
+}
+
+.main-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.take_action {
+    padding: 0 0 3rem;
+}
+
+.take_action-head {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-style: bold;
+    font-family: 'cornerstone';
+
+}
+
+.take_action-head::after {
+    background-image: linear-gradient(to bottom, transparent, transparent 6.25%, #000 6.25%, #000 25%, transparent 25%, transparent 40.625%, #000 40.625%, #000 59.375%, transparent 59.375%, transparent 75%, #000 75%, #000 93.75%, transparent 93.75%, transparent);
+    content: "";
+    height: .75em;
+    left: .2em;
+    display: inline-block;
+    margin-right: -100%;
+    position: relative;
+    right: 0;
+    width: 50%;
+}
+
+.take_action-p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.form {
+    padding: 5rem 2rem 5rem;
+    background-color: rgb(231, 231, 16);
+    margin-bottom: 3rem;
+}
+
+.head_form {
+    font-size: 3rem;
+    word-spacing: -1.2rem;
+    color: white;
+
+}
+
+.p-form {
+    color: white;
+    /* padding-bottom: 3rem; */
+}
+
+.head_form::after {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(6.25%, transparent), color-stop(6.25%, #fff), color-stop(25%, #fff), color-stop(25%, transparent), color-stop(40.625%, transparent), color-stop(40.625%, #fff), color-stop(59.375%, #fff), color-stop(59.375%, transparent), color-stop(75%, transparent), color-stop(75%, #fff), color-stop(93.75%, #fff), color-stop(93.75%, transparent), to(transparent));
+    background-image: linear-gradient(to bottom, transparent, transparent 6.25%, #fff 6.25%, #fff 25%, transparent 25%, transparent 40.625%, #fff 40.625%, #fff 59.375%, transparent 59.375%, transparent 75%, #fff 75%, #fff 93.75%, transparent 93.75%, transparent);
+    content: "";
+    height: .75em;
+    left: .2em;
+    display: inline-block;
+    margin-right: -100%;
+    position: relative;
+    right: 0;
+    width: 10%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_data::placeholder,
+.input_text::placeholder {
+    text-transform: uppercase;
+    font-family: 'cornerstone';
+}
+
+.input_data,
+.input_text {
+    border: none;
+    padding: 1.2rem 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-family: 'cornerstone';
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: black;
+    color: rgb(231, 231, 16);
+}
+
+.help_us {
+    font-size: 3.6rem;
+    word-spacing: 0.1rem;
+}
+
+.help_us::after {
+    width: 55%;
+}
+
+.footer {
+    max-width: 100%;
+    background: url(./images/adrien-olichon-ilVYjf0J378-unsplash.jpg);
+    background-size: cover;
+}
+
+.footer_content {
+    text-align: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0 5rem;
+}
+
+.head_footer {
+    font-family: 'cornerstone';
+    font-size: 3.8rem;
+    color: #fff;
+    word-spacing: -1.2rem;
+    letter-spacing: -1px;
+}
+
+.head_line {
+    height: 0.5rem;
+    /* color: rgb(231, 231, 16); */
+    background-color: rgb(231, 231, 16);
+    width: 27%;
+    margin: 0.6rem auto;
+    border-radius: 0.1rem;
+}
+
+.footer_nav-list {
+    display: flex;
+    justify-content: center;
+    margin-left: 2.2rem;
+    margin-top: 3rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3.2rem;
+    font-size: rem;
+}
+
+.media-icons {
+    font-size: 3rem;
+    color: rgba(231, 231, 16, 0.8);
+}
+
+.media-icons:hover {
+    color: rgb(231, 231, 16);
+}
+
+.icons_follow {
+    margin: 3rem 0;
+}
+
+.media-twitter {
+    font-size: 4.8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 173, 253);
+    padding: 0.5rem;
+}
+
+.media-instagram {
+    font-size: 4.8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(241, 65, 88);
+    padding: 0.5rem;
+}
+
+.media-instagram:hover {
+    color: white;
+    background-color: rgba(241, 65, 89, 0.685);
+}
+
+.media-twitter:hover {
+    color: white;
+    background-color: rgb(52, 173, 253, 0.685);
+}
+
+/* NEWS SECTION */
+.cta {
+    margin: 2rem 0;
+}
+
+.carousel-inner {
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(./images/joe-yates-CsH9TDWtA6c-unsplash.jpg);
+
+}
+
+.carousel-img {
+    /* width: 100%;
+    height: 100%;
+    background-size: cover; */
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(./images/joe-yates-CsH9TDWtA6c-unsplash.jpg);
+    filter: brightness(0.6);
+}
+
+.head_caption {
+    font-size: 2.2rem;
+}
+
+.sub_caption {
+    font-size: 3rem;
+    font-family: 'Changa', sans-serif;
+
+}
+
+.card_head {
+    margin: 2.2rem 0;
+    font-size: 2.6rem;
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+}
+
+.card_date {
+    font-weight: 700;
+    color: rgb(126, 126, 126);
+
+}
+
+.card_inner {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2.2rem;
+    padding-bottom: 3.6rem;
+    border-bottom: 4px solid black;
+
+}
+
+.card_content-text {
+    font-size: 2rem;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    margin-top: 2rem;
+}
+
+.card_img {
+    height: 30rem;
+    width: 40rem;
+}
+
+.card_img:hover {
+    opacity: 0.8;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.all_news {
+    text-align: right;
+}
+
+.all {
+    font-size: 2.6rem;
+    background-color: rgb(231, 231, 16);
+}
+
+.card_head_ar {
+    text-align: right;
+    font-family: 'Changa', sans-serif;
+}
+
+.card_content-text_ar {
+    text-align: right;
+    font-family: 'Changa', sans-serif;
+}
